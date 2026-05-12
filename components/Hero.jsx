@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-secondary/20 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
-        <div className="flex flex-col items-start md:items-center md:text-center gap-8">
+        <div className="flex flex-col items-start md:items-center md:text-center gap-8 mt-6 md:mt-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-sm text-gray-300"
           >
             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
-            Data-Driven & Creative Agency
+            DigiCore Tech Solutions
           </motion.div>
 
           <motion.h1
@@ -37,9 +37,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="max-w-2xl text-lg md:text-xl text-gray-400 leading-relaxed z-20 relative"
           >
-            We empower businesses by delivering innovative, data-driven
-            strategies tailored to your unique goals. From branding to
-            high-impact digital marketing.
+            We deliver global frontend, backend, UI/UX, WordPress and SEO
+            solutions designed to scale your business with high-performing
+            digital products.
           </motion.p>
 
           <motion.div

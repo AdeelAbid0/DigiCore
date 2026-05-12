@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -21,7 +21,7 @@ const Contact = () => {
               animate={{ y: 0, opacity: 1 }}
               className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block"
             >
-              Contact Us
+              Talk With Us
             </motion.span>
             <motion.h1
               initial={{ y: 20, opacity: 0 }}
@@ -29,8 +29,8 @@ const Contact = () => {
               transition={{ delay: 0.1 }}
               className="text-5xl md:text-7xl font-display font-bold mb-8"
             >
-              Let's start a <br />
-              <span className="text-gradient">conversation.</span>
+              Let's shape your <br />
+              <span className="text-gradient">digital future.</span>
             </motion.h1>
             <motion.p
               initial={{ y: 20, opacity: 0 }}
@@ -38,8 +38,8 @@ const Contact = () => {
               transition={{ delay: 0.2 }}
               className="text-gray-400 text-lg lg:mb-12 mx-auto lg:mx-0 max-w-md"
             >
-              Interested in working together? Fill out the form or send us an
-              email. We are always open to discussing new projects.
+              Tell us about your goals and we’ll match you with the right team
+              of designers, developers and growth specialists.
             </motion.p>
 
             <div className="space-y-6 lg:block hidden">
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500 mb-1">Email us at</div>
-                  <div className="text-xl font-medium">hello@broxi.agency</div>
+                  <div className="text-xl font-medium">hello@digicore.tech</div>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -111,10 +111,11 @@ const Contact = () => {
                   Service Interest
                 </label>
                 <select className="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-white focus:outline-none focus:border-primary transition-colors">
-                  <option>Branding & Identity</option>
-                  <option>Web Development</option>
-                  <option>Mobile App Design</option>
-                  <option>Digital Marketing</option>
+                  <option>Frontend Development</option>
+                  <option>Backend Development</option>
+                  <option>UI/UX & Figma Design</option>
+                  <option>WordPress Development</option>
+                  <option>SEO & Growth Strategy</option>
                 </select>
               </div>
 
@@ -142,7 +143,7 @@ const Contact = () => {
               </div>
               <div>
                 <div className="text-sm text-gray-500 mb-1">Email us at</div>
-                <div className="text-xl font-medium">hello@broxi.agency</div>
+                <div className="text-xl font-medium">hello@digicore.tech</div>
               </div>
             </div>
             <div className="flex items-start gap-4">

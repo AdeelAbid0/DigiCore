@@ -1,38 +1,60 @@
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const stats = [
-  { label: "100%", value: "Client Retention", description: "Trusted by over 500 companies" },
-  { label: "£40m", value: "Revenue Generated", description: "Across all partner campaigns" },
-  { label: "300%", value: "Growth Rate", description: "Average engagement increase" },
-  { label: "50+", value: "Awards Won", description: "International design recognition" },
-]
+  {
+    label: "100%",
+    value: "Client Retention",
+    description: "Focused on strong relationships and repeat work",
+  },
+  {
+    label: "25+",
+    value: "Projects Delivered",
+    description: "Startup-friendly digital launches and website builds",
+  },
+  {
+    label: "300%",
+    value: "Growth Rate",
+    description: "Driving measurable improvement for early-stage brands",
+  },
+  {
+    label: "5-Star",
+    value: "Customer Feedback",
+    description: "Highly rated service from clients worldwide",
+  },
+];
 
 export default function Results() {
   return (
-    <section id="results" className="py-24 bg-gradient-to-b from-dark to-black relative overflow-hidden">
+    <section
+      id="results"
+      className="py-24 bg-gradient-to-b from-dark to-black relative overflow-hidden"
+    >
       <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          
           <div>
-            <motion.h2 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8"
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-5xl font-display font-bold leading-tight mb-8"
             >
-              Not just any number, <br/>
-              you can also get it <br/>
-              <span className="text-gradient">even more.</span>
+              Proven digital growth <br />
+              for ambitious brands, <br />
+              <span className="text-gradient">worldwide.</span>
             </motion.h2>
             <p className="text-gray-400 text-lg mb-8 max-w-md">
-              We ensure that your brand not only stands out but also drives meaningful engagement and conversions.
+              We help businesses win online with high-performance development,
+              user-led design, and search-first marketing.
             </p>
-            <a href="#contact" className="group inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors">
-                Let&apos;s Scale Up
+            <a
+              href="#contact"
+              className="group inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition-colors"
+            >
+              Let's Talk Strategy
             </a>
           </div>
 
@@ -46,40 +68,52 @@ export default function Results() {
                 transition={{ delay: index * 0.1 }}
                 className="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm hover:border-white/30 transition-all"
               >
-                <div className="text-xs text-gray-400 border border-white/20 rounded-full px-2 py-1 w-fit mb-4">Verified</div>
+                <div className="text-xs text-gray-400 border border-white/20 rounded-full px-2 py-1 w-fit mb-4">
+                  Verified
+                </div>
                 <h3 className="text-4xl font-bold mb-2">{stat.label}</h3>
-                <div className="text-lg font-medium text-white mb-1">{stat.value}</div>
+                <div className="text-lg font-medium text-white mb-1">
+                  {stat.value}
+                </div>
                 <p className="text-sm text-gray-500">{stat.description}</p>
               </motion.div>
             ))}
           </div>
-
         </div>
 
-        <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-32 bg-card border border-white/10 rounded-3xl p-8 md:p-16 relative overflow-hidden"
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-32 bg-card border border-white/10 rounded-3xl p-8 md:p-16 relative overflow-hidden"
         >
-            <div className="absolute top-0 right-0 p-32 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
-            
-            <div className="relative z-10">
-                <div className="text-6xl font-serif text-white/20 mb-6">&quot;</div>
-                <h3 className="text-2xl md:text-4xl font-display font-medium leading-snug mb-12 max-w-3xl">
-                    See How We Bring Your Idea Into Reality. &quot;Working with Broxi transformed our brand. Their strategic approach and attention to detail elevated our online presence.&quot;
-                </h3>
-                
-                <div className="flex items-center gap-4">
-                    <img src="https://picsum.photos/100/100?random=5" alt="Client" className="w-12 h-12 rounded-full object-cover border-2 border-white/20" />
-                    <div>
-                        <div className="font-bold text-white">Sarah Mitchell</div>
-                        <div className="text-sm text-gray-400">Group Marketing Manager, TechCorp</div>
-                    </div>
+          <div className="absolute top-0 right-0 p-32 bg-primary/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+          <div className="relative z-10">
+            <div className="text-6xl font-serif text-white/20 mb-6">&quot;</div>
+            <h3 className="text-2xl md:text-4xl font-display font-medium leading-snug mb-12 max-w-3xl">
+              Our team turned a global launch into measurable growth. "Working
+              with DigiCore made every phase effortless and results-driven.
+              Their expertise brought clarity, speed, and outstanding digital
+              performance."
+            </h3>
+
+            <div className="flex items-center gap-4">
+              <img
+                src="https://picsum.photos/100/100?random=5"
+                alt="Client"
+                className="w-12 h-12 rounded-full object-cover border-2 border-white/20"
+              />
+              <div>
+                <div className="font-bold text-white">Sarah Mitchell</div>
+                <div className="text-sm text-gray-400">
+                  Group Marketing Manager, GlobalTech
                 </div>
+              </div>
             </div>
+          </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

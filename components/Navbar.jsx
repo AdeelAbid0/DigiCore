@@ -24,7 +24,6 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
 
     if (pathname !== "/") {
-      // Gunakan Next.js router untuk navigasi
       window.location.href = `/${href}`;
     } else {
       const element = document.querySelector(href);
@@ -36,7 +35,7 @@ export default function Navbar() {
     { name: "Expertise", href: "#expertise" },
     { name: "Work", href: "#work" },
     { name: "Results", href: "#results" },
-    { name: "Pricing", href: "#pricing" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -52,10 +51,9 @@ export default function Navbar() {
           href="/"
           className="text-2xl font-display font-bold tracking-tighter flex items-center gap-2 text-white"
         >
-          <div className="w-8 h-8 bg-white text-black flex items-center justify-center rounded-lg">
-            <span className="font-bold text-xl">B</span>
+          <div className="flex items-center justify-center rounded-lg">
+            <img src="/logo.png" alt="Logo" className="h-12 w-auto" />
           </div>
-          BROXI
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
@@ -82,7 +80,7 @@ export default function Navbar() {
             href="/contact"
             className="bg-white text-black px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors inline-block"
           >
-            Let&apos;s Talk
+            Let's Talk
           </Link>
         </div>
 
